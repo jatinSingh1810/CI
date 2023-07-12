@@ -1,0 +1,5 @@
+C:\Users\91981\eclipse-workspace\CI
+
+
+Remote Repositorty(GIT)
+https://github.com/jatinSingh1810/CI.git
