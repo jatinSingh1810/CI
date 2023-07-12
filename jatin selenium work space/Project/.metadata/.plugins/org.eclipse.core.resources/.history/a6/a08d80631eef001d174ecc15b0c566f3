@@ -1,0 +1,10 @@
+package Capture_Screenshot;
+
+public class ScreenshotYputube {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

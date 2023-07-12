@@ -1,0 +1,19 @@
+package Mouse_Hover;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public abstract sealed class TestTABSANDPOPUPS {
+
+	public static void main(String[] args) {
+		// TODO 		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_submit_get");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		-generated method stub
+
+	}
+
+}

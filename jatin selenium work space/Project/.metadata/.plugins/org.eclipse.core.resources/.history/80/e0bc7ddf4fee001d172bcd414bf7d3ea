@@ -1,0 +1,19 @@
+package SVG_GRAPHS;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SVG_GRAPHS {
+
+	public static void main(String[] args) {
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://www.covid19india.org/");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+		driver.switchTo().frame("iframeResult");
+	}
+
+}

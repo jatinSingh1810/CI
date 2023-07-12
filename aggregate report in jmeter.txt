@@ -1,0 +1,10 @@
+samples in jmeter:-- How many times user hit the website.
+Average:- if 1 user hit in 15m
+second is in 20m
+Third is 30 m then this will be calculated the average of 3 user with divied bu 3.
+THROUGHPUT:--tiME TAKEN BY SERVER TO HANDLING AND PROCESSING THE SERVER.
+wHEN 1233 SAMPLES REQUEST IS HITTING THEN SERVER THEN REQUEST WILL HIT 19.1/SEC
+LARGER THE THROUGPUT IT WILL BE BETEER.
+
+
+"${store}"=="11"

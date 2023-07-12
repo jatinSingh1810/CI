@@ -1,0 +1,27 @@
+package Gmail_Automate;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class Gmail_Automation {
+
+	public static void main(String[] args) throws InterruptedException {
+WebDriver driver = new FirefoxDriver();
+
+driver.get("https://accounts.google.com/InteractiveLogin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&osid=1&passive=1209600&service=mail&ifkv=Af_xneElnluBgXpN9o1u-iaSLz0e45s1dbdLlGI4EURD8GexLkVjHFyi7bLJE8Uz5L4KcuEqPT-_yg&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
+driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("jatin.singh18101989@gmail.com");
+
+Thread.sleep(2000);
+driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span")).click();
+driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")).sendKeys("Asd789!@#");
+		
+	Thread.sleep(2000);
+	
+	
+	driver.findElement(By.className("VfPpkd-vQzf8d")).click();
+	
+	Thread.sleep(3000);
+	
+	driver.close();
+	}
+
+}

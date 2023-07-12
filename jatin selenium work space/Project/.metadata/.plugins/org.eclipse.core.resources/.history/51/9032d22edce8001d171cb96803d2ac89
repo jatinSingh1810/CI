@@ -1,0 +1,27 @@
+package Gmail_Automate;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+public class Gmail_Automation {
+
+	public static void main(String[] args) throws InterruptedException {
+WebDriver driver = new FirefoxDriver();
+
+driver.get("https://www.gmail.com");
+driver.findElement(By.xpath("//*[@id=\"identifierId\"]")).sendKeys("jatin.singh18101989@gmail.com");
+
+Thread.sleep(2000);
+
+driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")).sendKeys("Asd789!@#");
+		
+	Thread.sleep(2000);
+	
+	
+	driver.findElement(By.className("VfPpkd-vQzf8d")).click();
+	
+	Thread.sleep(3000);
+	
+	driver.close();
+	}
+
+}

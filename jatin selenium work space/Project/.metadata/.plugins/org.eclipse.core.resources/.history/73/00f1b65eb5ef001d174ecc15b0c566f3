@@ -1,0 +1,41 @@
+package JQuery_Calender;
+
+import java.util.Calendar;
+
+public class CurrentDatesAndTimes {
+	
+	static int targetDay=0,
+	           targetMonth=0,
+	           targetYear=0;
+	
+	
+	static int CurrentDay=0,
+			CurrentMonth=0,
+			CurrentYear=0;
+			
+			
+	       static int jumpMonthsBy=0;
+	       
+	       static boolean increment=true;
+
+	public static void main(String[] args) {
+
+	String dateToSet="11/05/2023";
+	
+	
+	getCurrentDateMonthandYear();
+	System.out.println(CurrentDay+" "+CurrentMonth+" "+CurrentYear);
+	
+	
+	}
+
+	private static void getCurrentDateMonthandYear() {
+		Calendar cal =Calendar.getInstance();
+		
+		CurrentDay = cal.get(Calendar.DAY_OF_MONTH);
+		CurrentMonth= cal.get(Calendar.MONTH);
+		CurrentYear-=cal.get(Calendar.YEAR);
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+create database QaDb;
+use QaDb;
+
+
+Create table Employeeinfo(name varchar(20),id int,location varchar(20),age int);
+describe Employeeinfo;
+
+insert into Employeeinfo values('jatin',1,'Delhi',34);
+insert into Employeeinfo values('jatin singh',2,'Delhi',32);
+insert into Employeeinfo values('jatin kumar',3,'Delhi',31);
+insert into Employeeinfo values('jatin test',4,'Delhi',35);
+insert into Employeeinfo values('jatin hshsh',5,'Delhi',36);
+insert into Employeeinfo values('jatin test3',6,'Delhi',39);
+
+
+select name, id,location ,age from Employeeinfo;
+
+alter table Employeeinfo add gender varchar(20);
+describe Employeeinfo;
+alter table Employeeinfo modify gender varchar(10);
+
+alter table Employeeinfo add gender varchar(15);
+describe Employeeinfo;
+update Employeeinfo set gender='female' where name ='jatin';
+update Employeeinfo set gender='male' where name ='jatin singh';
+update Employeeinfo set gender='male' where name ='jatin kumar';
+update Employeeinfo set gender='male' where name ='jatin test';
+update Employeeinfo set gender='male' where name ='jatin hshsh';
+update Employeeinfo set gender='male' where name ='jatin test3';
+select * from Employeeinfo;
+delete from Employeeinfo where name ='jatin';
+select * from Employeeinfo;
+
+create database Test;
+drop database Test;

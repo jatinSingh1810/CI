@@ -1,0 +1,33 @@
+package Mouse_Hover;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class SlideAnElementa {
+
+	public static void main(String[] args) {
+		WebDriver driver = new FirefoxDriver();
+		driver.get("https://google.com");
+
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.findElement(By.name("q")).sendKeys("https://jqueryui.com/slider/");
+	
+	
+	WebElement Slider = driver.findElement(By.xpath("/html/body/div/span"));
+	
+	new Actions(driver).dragAndDropBy(Slider, 400, 0).perform();
+	
+	//action.sl
+	
+	
+	}
+
+	
+	
+}

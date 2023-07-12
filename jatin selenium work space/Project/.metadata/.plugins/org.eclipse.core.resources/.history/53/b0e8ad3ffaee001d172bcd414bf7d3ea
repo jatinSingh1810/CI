@@ -1,0 +1,29 @@
+package Chrome_Div_tools;
+
+import java.util.Optional;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v110.network.Network;
+
+public class Header_testing {
+
+	public static void main(String[] args) {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		
+		
+		
+		DevTools devTools = ((ChromeDriver) driver).getDevTools();
+		devTools.createSession();
+		
+		devTools.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+		
+		devTools.addListener(Network.requestWillBeSent(), request -> {
+			request.getRequest().getHeaders();
+		}
+		);
+	}
+
+}

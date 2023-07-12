@@ -1,0 +1,10 @@
+package Chrome_Div_tools;
+
+public class Chrome_Console_logs {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

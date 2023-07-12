@@ -1,0 +1,10 @@
+package Gmail_Automate;
+
+public class SCREENSHOT_ELEMENT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

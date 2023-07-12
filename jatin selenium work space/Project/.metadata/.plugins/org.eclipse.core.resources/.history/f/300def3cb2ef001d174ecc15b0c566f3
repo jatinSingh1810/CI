@@ -1,0 +1,10 @@
+package JQuery_Calender;
+
+public class CurrentDatesAndTimes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
